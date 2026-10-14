@@ -56,13 +56,10 @@ void Double(int& summ) {
 
 int main() {
   int summ = 0;
-  const char command[5][9]{
-      "deposit", "withdraw", "balance", "reset", "double",
-  };
-  const char stop[5]{"stop"};
   const char command[][9]{
       "deposit", "withdraw", "balance", "reset", "double",
   };
+  const char stop[5]{"stop"};
 
   void (*opperation[])(int&){
       &Deposit, &Withdraw, &Balance, &Reset, &Double,
